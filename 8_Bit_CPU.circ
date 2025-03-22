@@ -952,19 +952,22 @@
     <comp lib="6" loc="(730,980)" name="74241">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="8" loc="(2916,174)" name="Text">
+    <comp lib="8" loc="(2915,170)" name="Text">
       <a name="font" val="SansSerif bold 33"/>
       <a name="text" val="ALU"/>
     </comp>
-    <comp lib="8" loc="(3029,2416)" name="Text">
+    <comp lib="8" loc="(3025,2415)" name="Text">
       <a name="font" val="SansSerif bold 30"/>
       <a name="text" val="RAM DIVISION"/>
     </comp>
-    <comp lib="8" loc="(74,650)" name="Text">
+    <comp lib="8" loc="(3253,3356)" name="Text">
+      <a name="text" val="ADDRESS_REG"/>
+    </comp>
+    <comp lib="8" loc="(70,650)" name="Text">
       <a name="font" val="SansSerif bold 33"/>
       <a name="text" val="REG B"/>
     </comp>
-    <comp lib="8" loc="(80,62)" name="Text">
+    <comp lib="8" loc="(80,60)" name="Text">
       <a name="font" val="SansSerif bold 33"/>
       <a name="text" val="REG A"/>
     </comp>
@@ -1248,7 +1251,8 @@
     <wire from="(2040,2910)" to="(2040,3580)"/>
     <wire from="(2040,2910)" to="(2230,2910)"/>
     <wire from="(2040,3580)" to="(2480,3580)"/>
-    <wire from="(2060,2750)" to="(2060,2790)"/>
+    <wire from="(2060,2510)" to="(2060,2790)"/>
+    <wire from="(2060,2510)" to="(3990,2510)"/>
     <wire from="(2060,3050)" to="(2060,3570)"/>
     <wire from="(2060,3050)" to="(2150,3050)"/>
     <wire from="(2060,3570)" to="(2370,3570)"/>
@@ -1843,7 +1847,7 @@
     <wire from="(3930,3280)" to="(3960,3280)"/>
     <wire from="(3940,2910)" to="(4000,2910)"/>
     <wire from="(3960,3280)" to="(3970,3280)"/>
-    <wire from="(3990,2650)" to="(3990,2760)"/>
+    <wire from="(3990,2510)" to="(3990,2760)"/>
     <wire from="(3990,2760)" to="(4040,2760)"/>
     <wire from="(4000,2820)" to="(4000,2840)"/>
     <wire from="(4000,2820)" to="(4250,2820)"/>
