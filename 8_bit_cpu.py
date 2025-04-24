@@ -1,9 +1,58 @@
 arr=[]
-a=['3f', '6', '5b' ,'4f' '66', '6d', '7d', '7','7f' ,'6f', '77', '7c', '39', '5e', '79', '71']
-#ones place address
-for i in range(10):
-    arr.append(bin(i))
+a=[' 3f', ' 6', ' 5b', ' 4f', ' 66', ' 6d', ' 7d', ' 7',' 7f', ' 6f', ' 77', ' 7c', ' 39', ' 5e', ' 79', ' 71', ' 40']
 
+#ones_place
+rom_ones=""
+rom_tens=""
+rom_hundreds=""
+rom_thousands=""
+for i in range(10): #address
+    rom_ones+=a[i]
+    rom_tens+=a[0]
+    rom_hundreds+=a[0]
+    rom_thousands+=a[0]
+
+for i in range(10,100):
+    rom_ones+=a[i%10]
+    rom_tens+=a[(i//10)%10]
+    rom_hundreds+=a[0]
+    rom_thousands+=a[0]
+
+for i in range(100,256):
+    rom_ones+=a[i%10]
+    rom_tens+=a[(i//10)%10]
+    rom_hundreds+=a[(i//100)%10]
+    rom_thousands+=a[0]
+s=0
+for i in range(256,256+128):
+    rom_ones+=a[s%10]
+    rom_tens+=a[(s//10)%10]
+    rom_hundreds+=a[(s//100)%10]
+    rom_thousands+=a[0]
+    s+=1
+# neg  nums
+s=128
+for i in range(256+128,512):
+    # twos_comp=(255-s)+1
+    # print(s,bin(s),bin((i)))
+    rom_ones+=a[s%10]
+    rom_tens+=a[(s//10)%10]
+    rom_hundreds+=a[(s//100)%10]
+    rom_thousands+=a[-1]
+    s-=1
+
+# print(bin((511-1)+1))
+
+
+
+print("ONES")
+print(rom_ones)
+print("TENS")
+print(rom_tens)
+print("HUNDREDS")
+print(rom_hundreds)
+print("THOUSANDS")
+print(rom_thousands)
 
 
 
